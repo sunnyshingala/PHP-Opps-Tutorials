@@ -1,14 +1,15 @@
 <?php 
 
 class Person {
-    protected $first = "Sunny";
-    public $last = "Shingala";
-    private $age = "19";
-}
+    //properities
 
-class Pet extends Person{
-    function owner() {
-        $a = $this->first;
-        return $a;
+    public $name = "Mac";
+    public $eyecolor;
+    public $age;
+
+    //methods
+
+    public function setName($name){
+        $this->name = $name;
     }
 }

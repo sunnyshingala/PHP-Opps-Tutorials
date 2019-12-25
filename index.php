@@ -10,8 +10,13 @@ include_once ("./includes/person.inc.php");
     </head>
     <body>
         <?php
-            $pet01 = new Pet();
-            echo $pet01->owner();
+            $person1 = new Person();
+            $person1->setName("Sunny ");    
+            echo $person1->name;
+
+            $person2 = new Person();
+            $person2->setName("Roy");
+            echo $person2->name;
         ?>
     </body>
 </html>
