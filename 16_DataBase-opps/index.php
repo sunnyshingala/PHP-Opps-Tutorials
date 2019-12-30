@@ -12,8 +12,11 @@
     </head>
     <body>
         <?php 
-            $testObj = new Test();
-            $testObj->getUsersStmt("Sunny", "Shingala");
+            $userObj = new UsersView();
+            $userObj->showUser("Sunny");
+
+            $userObj2 = new UsersContr();
+            $userObj2->createUser("Narendra", "Modi", "1955-09-17");
         ?>
     </body>
 </html>
